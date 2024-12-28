@@ -20,7 +20,7 @@ html {
 body {
   font-family: "Gilroy", "Poppins", sans-serif;
   background-color: #ffffff; /* 60% White (dominant) */
-  color: #010101;           /* 30% Black (primary text) */
+  color: #010101; /* 30% Black (primary text) */
   line-height: 1.5;
 }
 .container {
@@ -34,8 +34,8 @@ a {
   transition: color 0.2s ease;
 }
 a:hover {
-  /* Use green (#87f29a) for link hover accent */
-  color: #87f29a; 
+  /* Use accent color (Lavender) for link hover */
+  color: #b4aaff; /* Lavender */
 }
 
 /* ---------- NAVBAR (sticky) ---------- */
@@ -43,9 +43,9 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #ffffff; 
-  /* Subtle lavender shadow for visual accent */
-  box-shadow: 0 2px 5px #b4aaff; 
+  background-color: #ffffff; /* White */
+  /* Subtle Lavender shadow for visual accent */
+  box-shadow: 0 2px 5px rgba(180, 170, 255, 0.1); /* Lavender shadow with low opacity */
 }
 .nav-container {
   display: flex;
@@ -65,7 +65,7 @@ a:hover {
 .bar {
   width: 25px; 
   height: 3px; 
-  background-color: #010101; /* Black bars for toggle */
+  background-color: #010101; /* Black */
   transition: all 0.3s ease;
 }
 .nav-links ul {
@@ -85,7 +85,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Keeping lavender gradient for hero */
+  /* Use single accent color gradient */
   background: linear-gradient(-45deg, #ffffff, #b4aaff);
   background-size: 400% 400%;
   animation: heroGradient 20s ease infinite;
@@ -105,8 +105,7 @@ a:hover {
 }
 .hero-content {
   text-align: center;
-  /* Corrected comment: black text for clarity */
-  color: #010101; 
+  color: #010101; /* Black */
   padding: 100px 0 50px;
 }
 .hero-heading {
@@ -137,9 +136,9 @@ a:hover {
   text-align: center;
 }
 .btn-primary {
-  /* Lavender accent for primary button */
-  background-color: #b4aaff;
-  color: #ffffff; 
+  /* Accent color for primary button */
+  background-color: #b4aaff; /* Lavender */
+  color: #ffffff; /* White */
 }
 .btn-primary:hover {
   filter: brightness(0.9);
@@ -150,7 +149,7 @@ a:hover {
   max-width: 800px;
   margin: 3rem auto 0 auto;
   position: relative;
-  border: 2px solid #ffffff; /* White frame */
+  border: 2px solid #ffffff; /* White */
   border-radius: 4px;
   overflow: hidden;
 }
@@ -182,11 +181,11 @@ a:hover {
 /* ---------- SOCIAL PROOF ---------- */
 .social-proof {
   padding: 60px 0;
-  background-color: #ffffff; 
-  /* Lavender for top/bottom borders instead of black */
-  border-top: 1px solid #b4aaff;
-  border-bottom: 1px solid #b4aaff;
+  background-color: #ffffff; /* White */
   text-align: center;
+  /* Use accent color for borders */
+  border-top: 1px solid #b4aaff; /* Lavender */
+  border-bottom: 1px solid #b4aaff; /* Lavender */
 }
 .section-heading {
   font-size: 2rem;
@@ -214,24 +213,24 @@ a:hover {
   margin: 0 auto;
 }
 .short-testimonials blockquote {
-  background-color: #ffffff;
-  border-left: 4px solid #b4aaff; 
+  background-color: #ffffff; /* White */
+  border-left: 4px solid #b4aaff; /* Lavender */
   padding: 1rem;
   font-style: italic;
 }
 .short-testimonials cite {
   display: block;
   font-size: 0.9rem;
-  color: #010101; 
+  color: #010101; /* Black */
   margin-top: 0.5rem;
 }
 
 /* ---------- BENEFITS ---------- */
-/* Keeping your current brand gradient for benefits */
 .benefits {
   padding: 60px 0;
   text-align: center;
-  background: linear-gradient(to right, #b4aaff, #32c7f5);
+  /* Use single accent color gradient */
+  background: linear-gradient(to right, #b4aaff, #b4aaff);
 }
 .benefits-grid {
   display: grid;
@@ -241,9 +240,8 @@ a:hover {
   margin: 0 auto;
 }
 .benefit-box {
-  background-color: #ffffff; 
-  /* Lavender border instead of black for accent */
-  border: 1px solid #b4aaff; 
+  background-color: #ffffff; /* White */
+  border: 1px solid #b4aaff; /* Lavender border */
   padding: 1.5rem;
   border-radius: 4px;
   transition: transform 0.2s ease;
@@ -268,7 +266,7 @@ a:hover {
 /* ---------- HOW IT WORKS ---------- */
 .how-it-works {
   padding: 60px 0;
-  background-color: #ffffff;
+  background-color: #ffffff; /* White */
   text-align: center;
 }
 .how-it-works-list {
@@ -292,7 +290,7 @@ a:hover {
   left: 0;
   top: 0;
   font-weight: 700;
-  color: #b4aaff; 
+  color: #b4aaff; /* Lavender */
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -300,9 +298,9 @@ a:hover {
 /* ---------- TESTIMONIALS ---------- */
 .testimonials {
   padding: 60px 0;
-  background-color: #ffffff;
-  /* Lavender top border for accent */
-  border-top: 1px solid #b4aaff;
+  background-color: #ffffff; /* White */
+  /* Use accent color for top border */
+  border-top: 1px solid #b4aaff; /* Lavender */
   text-align: center;
 }
 .testimonials-grid {
@@ -313,16 +311,16 @@ a:hover {
   margin: 2rem auto 0 auto;
 }
 .testimonial-card {
-  background-color: #ffffff;
-  border: 1px solid #b4aaff; 
+  background-color: #ffffff; /* White */
+  border: 1px solid #b4aaff; /* Lavender border */
   padding: 1.5rem;
   border-radius: 4px;
   text-align: center;
   transition: box-shadow 0.2s ease;
 }
 .testimonial-card:hover {
-  /* Subtle green highlight for hover */
-  box-shadow: 0 2px 8px #87f29a; 
+  /* Use accent color for box shadow */
+  box-shadow: 0 2px 8px rgba(180, 170, 255, 0.5); /* Lavender shadow */
 }
 .testimonial-image {
   width: 60px;
@@ -338,46 +336,47 @@ a:hover {
 .testimonial-card span {
   display: block;
   font-size: 0.9rem;
-  color: #010101;
+  color: #010101; /* Black */
   font-weight: 600;
 }
 
 /* ---------- FAQ ---------- */
 .faq {
   padding: 60px 0;
-  background-color: #ffffff;
+  background-color: #ffffff; /* White */
 }
 .faq-item {
-  /* Lavender border for FAQ items */
-  border: 1px solid #b4aaff;
+  /* Use accent color for borders */
+  border: 1px solid #b4aaff; /* Lavender */
   border-radius: 4px;
   margin-bottom: 1rem;
   overflow: hidden;
 }
-/* Green question bar for variety */
 .faq-question {
   width: 100%;
-  background-color: #87f29a; 
+  /* Use accent color for background */
+  background-color: #b4aaff; /* Lavender */
   padding: 1rem;
   font-size: 1rem;
   font-weight: 600;
   text-align: left;
   border: none;
   cursor: pointer;
+  color: #ffffff; /* White text on accent background */
 }
 .faq-answer {
   display: none;
-  background-color: #ffffff;
+  background-color: #ffffff; /* White */
   padding: 1rem;
   font-weight: 300;
   line-height: 1.6;
 }
 
 /* ---------- CONTACT SECTION (FormSubmit) ---------- */
-/* Keeping your contact gradient: #87f29a -> #ffffff -> #b4aaff */
 .contact-section {
   padding: 60px 0;
-  background: linear-gradient(to right, #87f29a, #ffffff, #b4aaff);
+  /* Use single accent color gradient */
+  background: linear-gradient(to right, #b4aaff, #ffffff);
   text-align: center;
 }
 .contact-form {
@@ -396,8 +395,7 @@ a:hover {
   padding: 0.75rem;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  /* Lavender border instead of black */
-  border: 1px solid #b4aaff;
+  border: 1px solid #b4aaff; /* Lavender border */
   border-radius: 4px;
 }
 .submit-btn {
@@ -406,10 +404,10 @@ a:hover {
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background-color: #ffffff;
+  background-color: #ffffff; /* White */
   padding: 40px 0;
-  /* Lavender border-top for accent */
-  border-top: 1px solid #b4aaff;
+  /* Use accent color for top border */
+  border-top: 1px solid #b4aaff; /* Lavender */
 }
 .footer-flex {
   display: flex;
@@ -428,6 +426,7 @@ a:hover {
 }
 .footer-links a {
   font-weight: 300;
+  color: #010101; /* Black */
 }
 .footer-social {
   display: flex;
@@ -437,19 +436,20 @@ a:hover {
 .social-link {
   text-decoration: underline;
   font-weight: 300;
+  color: #010101; /* Black */
   transition: color 0.2s ease;
 }
 .social-link:hover {
-  color: #010101; /* Black hover for links in footer */
+  color: #b4aaff; /* Lavender hover */
 }
 .footer-bottom {
   text-align: center;
   margin-top: 1.5rem;
   font-size: 0.9rem;
-  color: #010101;
+  color: #010101; /* Black */
 }
 .footer-bottom a {
-  color: #010101;
+  color: #010101; /* Black */
   text-decoration: underline;
 }
 
@@ -462,13 +462,13 @@ a:hover {
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White */
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    /* Lavender shadow instead of black */
-    box-shadow: 0 2px 5px #b4aaff;
+    /* Use accent color for shadow */
+    box-shadow: 0 2px 5px rgba(180, 170, 255, 0.1); /* Lavender shadow */
   }
   .nav-links ul {
     flex-direction: column;

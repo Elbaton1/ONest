@@ -3,7 +3,7 @@
  * ~~~~~~~
  * - Hamburger nav toggle
  * - FAQ accordion
- * - Intersection Observer for fade-in on scroll
+ * - Intersection Observer for fade-in
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,14 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     questionBtn.addEventListener('click', () => {
       const isOpen = (answer.style.display === 'block');
-      // close all others first
+      // close all others
       document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
       // toggle this one
       answer.style.display = isOpen ? 'none' : 'block';
     });
   });
 
-  // FADE-IN SECTIONS
+  // FADE-IN SECTIONS ON SCROLL
   const fadeSections = document.querySelectorAll('.fade-section');
   const observerOpts = { threshold: 0.1 };
 

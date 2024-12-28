@@ -1,11 +1,11 @@
-/*
+/* 
   style.css
   ~~~~~~~~~
-  - No typewriter effect, simpler heading
   - Mobile-centered brand logos
-  - Real images in benefits (benefit-imageX.png)
-  - Single CTA that leads to contact
-  - "How It Works" a bit more stylized
+  - Real images in benefits
+  - Single CTA: "Let’s Do This" -> #contact-section
+  - "How It Works" slightly styled
+  - FormSubmit => sends to mobrien902@gmail.com
 */
 
 /* ---------- RESET & BASE ---------- */
@@ -37,7 +37,7 @@ a:hover {
   color: #444;
 }
 
-/* ---------- NAVBAR (STICKY) ---------- */
+/* ---------- NAVBAR (sticky) ---------- */
 .navbar {
   position: sticky;
   top: 0;
@@ -61,9 +61,9 @@ a:hover {
   cursor: pointer;
 }
 .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #000;
+  width: 25px; 
+  height: 3px; 
+  background-color: #000; 
   transition: all 0.3s ease;
 }
 .nav-links ul {
@@ -93,7 +93,7 @@ a:hover {
   100% { background-position: 0% 50%; }
 }
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0,0,0,0.25);
   width: 100%;
   height: 100%;
   display: flex;
@@ -129,11 +129,11 @@ a:hover {
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
   font-weight: 700;
-  text-align: center;
   transition: filter 0.2s ease;
+  text-align: center;
 }
 .btn-primary {
-  background-color: #b4aaff; 
+  background-color: #b4aaff;
   color: #fff;
 }
 .btn-primary:hover {
@@ -177,8 +177,8 @@ a:hover {
 /* ---------- SOCIAL PROOF ---------- */
 .social-proof {
   padding: 60px 0;
-  text-align: center;
   background-color: #fff;
+  text-align: center;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
@@ -361,7 +361,7 @@ a:hover {
   line-height: 1.6;
 }
 
-/* ---------- CONTACT SECTION ---------- */
+/* ---------- CONTACT SECTION (FormSubmit) ---------- */
 .contact-section {
   padding: 60px 0;
   background: linear-gradient(to right, #e0ffe5, #f0faff);
@@ -438,7 +438,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---------- MEDIA QUERIES (RESPONSIVE) ---------- */
+/* ---------- MOBILE RESPONSIVENESS ---------- */
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;

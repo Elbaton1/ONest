@@ -230,7 +230,7 @@ a:hover {
   padding: 60px 0;
   text-align: center;
   /* Use single accent color gradient */
-  background: linear-gradient(to right, #b4aaff, #b4aaff);
+  background: linear-gradient(-45deg, #ffffff, #b4aaff);
 }
 .benefits-grid {
   display: grid;

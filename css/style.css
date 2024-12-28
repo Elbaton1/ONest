@@ -1,37 +1,33 @@
 /*
   style.css
   ~~~~~~~~~
-  - Bigger hero, moving gradient background
-  - Perfectly sized embedded YT video
-  - Pulse CTA button
-  - Benefits, Social Proof, Testimonials, FAQ
-  - Contact form with FormSubmit for real email
+  - No typewriter effect, simpler heading
+  - Mobile-centered brand logos
+  - Real images in benefits (benefit-imageX.png)
+  - Single CTA that leads to contact
+  - "How It Works" a bit more stylized
 */
 
-/* ---------- RESET & GLOBAL BASE ---------- */
+/* ---------- RESET & BASE ---------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Gilroy", "Poppins", sans-serif;
   background-color: #fff;
   color: #000;
   line-height: 1.5;
 }
-
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -58,7 +54,6 @@ a:hover {
 .onest-logo {
   height: 40px;
 }
-
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -71,25 +66,23 @@ a:hover {
   background-color: #000;
   transition: all 0.3s ease;
 }
-
 .nav-links ul {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
 .nav-links li a {
-  font-weight: 300; /* Gilroy-light fallback */
+  font-weight: 300;
   font-size: 1rem;
 }
 
-/* ---------- HERO SECTION (MOVING GRADIENT) ---------- */
+/* ---------- HERO (MOVING GRADIENT) ---------- */
 .hero {
   position: relative;
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Vibrant gradient that animates over time */
   background: linear-gradient(-45deg, #b4aaff, #ff8a9f, #98f9aa, #7fd7ff);
   background-size: 400% 400%;
   animation: heroGradient 20s ease infinite;
@@ -99,9 +92,8 @@ a:hover {
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 .hero-overlay {
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
   height: 100%;
   display: flex;
@@ -124,8 +116,6 @@ a:hover {
   max-width: 600px;
   margin: 0 auto 2rem auto;
 }
-
-/* Pulse CTA */
 @keyframes pulse {
   0%   { transform: scale(1); }
   50%  { transform: scale(1.05); }
@@ -134,8 +124,6 @@ a:hover {
 .pulse-cta {
   animation: pulse 2s infinite;
 }
-
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -145,14 +133,13 @@ a:hover {
   transition: filter 0.2s ease;
 }
 .btn-primary {
-  background-color: #b4aaff; /* CTA color */
+  background-color: #b4aaff; 
   color: #fff;
 }
 .btn-primary:hover {
   filter: brightness(0.9);
 }
-
-/* Responsive video container with aspect ratio */
+/* Perfect 16:9 video container */
 .video-container {
   width: 80%;
   max-width: 800px;
@@ -165,17 +152,18 @@ a:hover {
 .video-container::before {
   content: "";
   display: block;
-  padding-top: 56.25%; /* 16:9 ratio */
+  padding-top: 56.25%;
 }
 .video-container iframe {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
   border: none;
 }
 
-/* ---------- FADE-IN SECTIONS ---------- */
+/* Fade-in on scroll */
 .fade-section {
   opacity: 0;
   transform: translateY(20px);
@@ -186,13 +174,6 @@ a:hover {
   transform: translateY(0);
 }
 
-/* ---------- SECTION HEADINGS ---------- */
-.section-heading {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
 /* ---------- SOCIAL PROOF ---------- */
 .social-proof {
   padding: 60px 0;
@@ -200,6 +181,11 @@ a:hover {
   background-color: #fff;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+}
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 .brand-logos {
   display: flex;
@@ -212,7 +198,7 @@ a:hover {
   transition: transform 0.3s ease;
 }
 .brand-logos img:hover {
-  transform: scale(1.1);
+  transform: rotate(5deg) scale(1.1);
 }
 .short-testimonials {
   display: flex;
@@ -267,8 +253,8 @@ a:hover {
 }
 .benefit-image {
   max-width: 100px;
-  display: block;
   margin: 0 auto 0.75rem auto;
+  display: block;
 }
 
 /* ---------- HOW IT WORKS ---------- */
@@ -278,28 +264,29 @@ a:hover {
   text-align: center;
 }
 .how-it-works-list {
-  list-style: decimal inside;
+  list-style: none;
   max-width: 700px;
   margin: 2rem auto;
   text-align: left;
-  font-weight: 300;
   line-height: 1.6;
+  font-weight: 300;
+  counter-reset: hiw-counter;
 }
 .how-it-works-list li {
   margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2.5rem;
+  counter-increment: hiw-counter;
 }
-
-/* ---------- REPEATED CTA ---------- */
-.repeated-cta {
-  text-align: center;
-  padding: 50px 0;
-  border-top: 1px solid #eee;
-}
-.repeated-cta .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+.how-it-works-list li::before {
+  content: counter(hiw-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  color: #b4aaff;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 /* ---------- TESTIMONIALS ---------- */
@@ -321,8 +308,8 @@ a:hover {
   border: 1px solid #ccc;
   padding: 1.5rem;
   border-radius: 4px;
-  transition: box-shadow 0.2s ease;
   text-align: center;
+  transition: box-shadow 0.2s ease;
 }
 .testimonial-card:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -374,7 +361,7 @@ a:hover {
   line-height: 1.6;
 }
 
-/* ---------- CONTACT SECTION (FormSubmit) ---------- */
+/* ---------- CONTACT SECTION ---------- */
 .contact-section {
   padding: 60px 0;
   background: linear-gradient(to right, #e0ffe5, #f0faff);
@@ -476,7 +463,6 @@ a:hover {
     max-height: 300px;
   }
 
-  /* No parallax on mobile */
   .hero {
     background-attachment: scroll;
   }
@@ -486,16 +472,17 @@ a:hover {
   .hero-subheading {
     font-size: 1rem;
   }
-
   .video-container {
     width: 95%;
     margin-top: 1rem;
   }
 
+  /* Center brand logos on mobile */
   .brand-logos {
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
   }
+
   .benefits-grid,
   .testimonials-grid {
     grid-template-columns: 1fr;

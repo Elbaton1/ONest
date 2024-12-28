@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic meta for responsive design -->
+  <!-- Basic meta & responsiveness -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onest - Get Deep Insights from Your Customers</title>
 
   <!-- Google Fonts fallback: Poppins if Gilroy isn't installed -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" 
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
     rel="stylesheet"
-  >
+  />
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -22,11 +22,11 @@
   <!-- ========== NAVBAR ========== -->
   <header class="navbar">
     <div class="container nav-container">
-      <!-- Left: Onest Logo -->
+      <!-- Onest Logo (top-left) -->
       <a href="#hero" class="nav-logo-link">
-        <img 
-          src="images/onest-logo.png" 
-          alt="Onest Logo" 
+        <img
+          src="images/onest-logo.png"
+          alt="Onest Logo"
           class="onest-logo"
         />
       </a>
@@ -38,7 +38,7 @@
         <span class="bar"></span>
       </div>
 
-      <!-- Nav links: Home, Learn More, Contact Us -->
+      <!-- Nav links -->
       <nav class="nav-links" id="navLinks">
         <ul>
           <li><a href="#hero">Home</a></li>
@@ -49,155 +49,146 @@
     </div>
   </header>
 
-  <!-- ========== HERO (Moving Gradient) ========== -->
+  <!-- ========== HERO (Moving Gradient, Single CTA) ========== -->
   <section class="hero" id="hero">
     <div class="hero-overlay">
       <div class="container hero-content fade-section">
+        <!-- Big, static heading (no typewriter effect) -->
         <h1 class="hero-heading">
           Get Deep Insights from Your Customers
         </h1>
         <h2 class="hero-subheading">
           Talk to your customers like never before. Learn how your business is really doing.
         </h2>
-        <!-- Pulse CTA button -->
-        <a href="#video-demo" class="btn btn-primary hero-cta pulse-cta">
-          Check out Onest Feedback in Action
+        <!-- One CTA, leading to contact -->
+        <a href="#contact-section" class="btn btn-primary hero-cta pulse-cta">
+          Let’s Do This
         </a>
 
-        <!-- Responsive video container with a 16:9 aspect ratio -->
+        <!-- Perfectly scaled YouTube embed -->
         <div class="video-container" id="video-demo">
           <iframe
             src="https://www.youtube.com/embed/oOBETYjihPk"
             title="Onest Demo Video"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== SOCIAL PROOF SECTION ========== -->
+  <!-- ========== SOCIAL PROOF (Mobile-centered brand logos) ========== -->
   <section class="social-proof fade-section">
     <div class="container">
       <h3 class="section-heading">Trusted by Leading Brands</h3>
       <div class="brand-logos">
-        <img src="images/brand-logo1.png" alt="Brand 1">
-        <img src="images/brand-logo2.png" alt="Brand 2">
-        <img src="images/brand-logo3.png" alt="Brand 3">
+        <img src="images/brand-logo1.png" alt="Brand 1" />
+        <img src="images/brand-logo2.png" alt="Brand 2" />
+        <img src="images/brand-logo3.png" alt="Brand 3" />
       </div>
       <div class="short-testimonials">
         <blockquote>
-          <p>“Onest took our product updates from guesswork to data-driven brilliance.”</p>
+          <p>“Onest took our product updates from guesswork to data-driven brilliance!”</p>
           <cite>— Jamie, CEO at MegaCorp</cite>
         </blockquote>
         <blockquote>
-          <p>“A 40% boost in satisfaction within weeks. Onest is a no-brainer for any product team.”</p>
+          <p>“A 40% boost in satisfaction within weeks—blown away!”</p>
           <cite>— Chris, Head of Product at FutureWave</cite>
         </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- ========== BENEFITS SECTION ========== -->
+  <!-- ========== BENEFITS (Using actual placeholder images) ========== -->
   <section class="benefits fade-section" id="benefits">
     <div class="container">
       <h3 class="section-heading">Benefits</h3>
       <div class="benefits-grid">
         <div class="benefit-box">
-          <img 
-            src="images/placeholder-benefit1.png"
+          <img
+            src="images/benefit-image1.png"
             alt="Benefit 1"
             class="benefit-image"
           />
           <h4>Real-Time Analytics</h4>
-          <p>Gather immediate feedback so you can pivot quickly and effectively.</p>
+          <p>Monitor user feedback the moment it happens.</p>
         </div>
         <div class="benefit-box">
-          <img 
-            src="images/placeholder-benefit2.png"
+          <img
+            src="images/benefit-image2.png"
             alt="Benefit 2"
             class="benefit-image"
           />
           <h4>Cost Savings</h4>
-          <p>Invest only in what your users really want—no more wasted dev hours.</p>
+          <p>Eliminate wasteful dev cycles—focus on what customers actually want.</p>
         </div>
         <div class="benefit-box">
-          <img 
-            src="images/placeholder-benefit3.png"
+          <img
+            src="images/benefit-image3.png"
             alt="Benefit 3"
             class="benefit-image"
           />
           <h4>User-Friendly</h4>
-          <p>An intuitive dashboard that your whole team can navigate with ease.</p>
+          <p>An intuitive dashboard that your whole team can master quickly.</p>
         </div>
         <div class="benefit-box">
-          <img 
-            src="images/placeholder-benefit4.png"
+          <img
+            src="images/benefit-image4.png"
             alt="Benefit 4"
             class="benefit-image"
           />
           <h4>Lightning Setup</h4>
-          <p>All it takes is a snippet and you’re in business. Seriously—it's that easy.</p>
+          <p>Just paste our snippet and watch the insights roll in—no rocket science here.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== HOW IT WORKS SECTION ========== -->
+  <!-- ========== HOW IT WORKS (Slightly improved) ========== -->
   <section class="how-it-works fade-section" id="how-it-works">
     <div class="container">
       <h3 class="section-heading">How It Works</h3>
       <ol class="how-it-works-list">
-        <li>Sign up for Onest and celebrate the easy win.</li>
-        <li>Embed our script in your site/app. Minimal fuss, maximum impact.</li>
-        <li>Watch real-time feedback stream in—no more waiting for outdated surveys.</li>
-        <li>Act on that feedback, refine your product, and dazzle your users.</li>
+        <li><strong>Sign Up:</strong> Grab an Onest account and celebrate the easy win.</li>
+        <li><strong>Embed:</strong> Paste our script in your site/app. Minimal fuss, maximum results.</li>
+        <li><strong>Observe:</strong> Watch real-time feedback come in via our modern dashboard.</li>
+        <li><strong>Refine:</strong> Use data to make game-changing improvements and delight your users.</li>
       </ol>
     </div>
   </section>
 
-  <!-- ========== REPEATED CTA ========== -->
-  <section class="repeated-cta fade-section">
-    <div class="container">
-      <h3>Ready to Elevate Your Feedback?</h3>
-      <a href="#hero" class="btn btn-primary">
-        Let’s Do This
-      </a>
-    </div>
-  </section>
-
-  <!-- ========== TESTIMONIALS SECTION ========== -->
+  <!-- ========== TESTIMONIALS ========== -->
   <section class="testimonials fade-section" id="testimonials">
     <div class="container">
       <h3 class="section-heading">What Our Customers Say</h3>
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <img 
+          <img
             src="images/placeholder-testimonial1.png"
             alt="User 1"
             class="testimonial-image"
           />
-          <p>“We cut churn by 30%. Onest took us to new heights—literally.”</p>
+          <p>“We cut churn by 30%. Data-driven decisions for the win!”</p>
           <span>— Taylor, COO</span>
         </div>
         <div class="testimonial-card">
-          <img 
+          <img
             src="images/placeholder-testimonial2.png"
             alt="User 2"
             class="testimonial-image"
           />
-          <p>“Real insights, zero guesswork. My entire team’s productivity soared.”</p>
+          <p>“No more guesswork, everything is user-insight based. Love it.”</p>
           <span>— Alex, Head of CX</span>
         </div>
         <div class="testimonial-card">
-          <img 
+          <img
             src="images/placeholder-testimonial3.png"
             alt="User 3"
             class="testimonial-image"
           />
-          <p>“Finally, product decisions that are data-backed. Couldn’t be happier!”</p>
+          <p>“Finally, product updates we can actually justify. Thank you, Onest!”</p>
           <span>— Sam, Product Manager</span>
         </div>
       </div>
@@ -208,87 +199,64 @@
   <section class="faq fade-section" id="faq">
     <div class="container">
       <h3 class="section-heading">Frequently Asked Questions</h3>
+
       <div class="faq-item">
-        <button class="faq-question">
-          How secure is my data with Onest?
-        </button>
+        <button class="faq-question">How secure is my data?</button>
         <div class="faq-answer">
-          <p>We use modern encryption, secure servers, and follow compliance best practices.</p>
+          <p>We use encryption, secure servers, and compliance best practices to keep everything locked down.</p>
         </div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-question">
-          Can Onest handle enterprise-level traffic?
-        </button>
+        <button class="faq-question">Can Onest handle large enterprise traffic?</button>
         <div class="faq-answer">
-          <p>Yes! We scale smoothly from tiny startups to huge corporations.</p>
+          <p>Yes! From small teams to massive corporations, we scale effortlessly.</p>
         </div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-question">
-          Do I need coding experience for Onest?
-        </button>
+        <button class="faq-question">Do I need coding skills?</button>
         <div class="faq-answer">
-          <p>Not at all. Copy, paste, done. No sleepless nights over integration.</p>
+          <p>Not at all. Copy, paste, done. Simplicity is our middle name.</p>
         </div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-question">
-          Is there a free plan?
-        </button>
+        <button class="faq-question">Is there a free plan?</button>
         <div class="faq-answer">
-          <p>Yes! Start for free, upgrade whenever you need more features.</p>
+          <p>Yes—start free and upgrade when you need more features. We believe in letting you test first.</p>
         </div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-question">
-          What about customer support?
-        </button>
+        <button class="faq-question">What about support?</button>
         <div class="faq-answer">
-          <p>We provide 24/7 email support, live chat during business hours, and a robust knowledge base.</p>
+          <p>24/7 email, live chat (business hours), plus a robust knowledge base to keep you covered.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FINAL CTA ========== -->
-  <section class="repeated-cta fade-section">
-    <div class="container">
-      <h3>Ready to Try Onest?</h3>
-      <a href="#hero" class="btn btn-primary">
-        Get Started
-      </a>
-    </div>
-  </section>
-
-  <!-- ========== CONTACT SECTION (FormSubmit -> GitHub Pages) ========== -->
+  <!-- ========== CONTACT SECTION (FormSubmit) ========== -->
   <section class="contact-section fade-section" id="contact-section">
     <div class="container">
       <h3 class="section-heading">Contact Us</h3>
       <!-- 
-        Using FormSubmit. Submit via email to mobrien902@gmail.com 
-        No server code needed—works on GitHub Pages. 
+        Using FormSubmit -> Emails to mobrien902@gmail.com 
+        Perfect for GitHub Pages, no server needed
       -->
       <form
         action="https://formsubmit.co/mobrien902@gmail.com"
         method="POST"
         class="contact-form"
       >
-        <!-- 
-          Optional hidden fields:
-          - _next: redirect URL after success 
-          - _subject: custom email subject
-          - _captcha: "false" if you want to disable captcha, etc. 
-        -->
         <input type="hidden" name="_subject" value="New Onest Contact Submission">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://github.com/YOUR-USERNAME/YOUR-REPO/thankyou.html">
-
         <!-- Honeypot / anti-spam -->
         <input type="text" name="_honey" style="display:none">
 
         <label for="name">Name</label>
-        <input 
+        <input
           type="text"
           id="name"
           name="name"
@@ -297,7 +265,7 @@
         />
 
         <label for="email">Email</label>
-        <input 
+        <input
           type="email"
           id="email"
           name="email"
@@ -350,7 +318,7 @@
     </div>
   </footer>
 
-  <!-- Main JS for nav toggle, FAQ accordion, fade-in -->
+  <!-- Main JS for nav toggle, FAQ, fade-in -->
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -19,8 +19,8 @@ html {
 }
 body {
   font-family: "Gilroy", "Poppins", sans-serif;
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff; /* 60% White (dominant) */
+  color: #010101;           /* 30% Black (primary text) */
   line-height: 1.5;
 }
 .container {
@@ -34,7 +34,8 @@ a {
   transition: color 0.2s ease;
 }
 a:hover {
-  color: #444;
+  /* Use green (#87f29a) for link hover accent */
+  color: #87f29a; 
 }
 
 /* ---------- NAVBAR (sticky) ---------- */
@@ -42,8 +43,9 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background-color: #ffffff; 
+  /* Subtle lavender shadow for visual accent */
+  box-shadow: 0 2px 5px #b4aaff; 
 }
 .nav-container {
   display: flex;
@@ -63,7 +65,7 @@ a:hover {
 .bar {
   width: 25px; 
   height: 3px; 
-  background-color: #000; 
+  background-color: #010101; /* Black bars for toggle */
   transition: all 0.3s ease;
 }
 .nav-links ul {
@@ -83,7 +85,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(-45deg, #2ce3ff, #78fd6400);
+  /* Keeping lavender gradient for hero */
+  background: linear-gradient(-45deg, #ffffff, #b4aaff);
   background-size: 400% 400%;
   animation: heroGradient 20s ease infinite;
 }
@@ -93,7 +96,7 @@ a:hover {
   100% { background-position: 0% 50%; }
 }
 .hero-overlay {
-  background-color: rgba(0,0,0,0.25);
+  background-color: transparent; 
   width: 100%;
   height: 100%;
   display: flex;
@@ -102,7 +105,8 @@ a:hover {
 }
 .hero-content {
   text-align: center;
-  color: #fff;
+  /* Corrected comment: black text for clarity */
+  color: #010101; 
   padding: 100px 0 50px;
 }
 .hero-heading {
@@ -133,8 +137,9 @@ a:hover {
   text-align: center;
 }
 .btn-primary {
+  /* Lavender accent for primary button */
   background-color: #b4aaff;
-  color: #fff;
+  color: #ffffff; 
 }
 .btn-primary:hover {
   filter: brightness(0.9);
@@ -145,7 +150,7 @@ a:hover {
   max-width: 800px;
   margin: 3rem auto 0 auto;
   position: relative;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff; /* White frame */
   border-radius: 4px;
   overflow: hidden;
 }
@@ -177,10 +182,11 @@ a:hover {
 /* ---------- SOCIAL PROOF ---------- */
 .social-proof {
   padding: 60px 0;
-  background-color: #fff;
+  background-color: #ffffff; 
+  /* Lavender for top/bottom borders instead of black */
+  border-top: 1px solid #b4aaff;
+  border-bottom: 1px solid #b4aaff;
   text-align: center;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 }
 .section-heading {
   font-size: 2rem;
@@ -208,23 +214,24 @@ a:hover {
   margin: 0 auto;
 }
 .short-testimonials blockquote {
-  background-color: #f9f9f9;
-  border-left: 4px solid #b4aaff;
+  background-color: #ffffff;
+  border-left: 4px solid #b4aaff; 
   padding: 1rem;
   font-style: italic;
 }
 .short-testimonials cite {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: #010101; 
   margin-top: 0.5rem;
 }
 
 /* ---------- BENEFITS ---------- */
+/* Keeping your current brand gradient for benefits */
 .benefits {
   padding: 60px 0;
   text-align: center;
-  background: linear-gradient(to right, #fef6ff, #f5faff);
+  background: linear-gradient(to right, #b4aaff, #32c7f5);
 }
 .benefits-grid {
   display: grid;
@@ -234,8 +241,9 @@ a:hover {
   margin: 0 auto;
 }
 .benefit-box {
-  background-color: #fff;
-  border: 1px solid #000;
+  background-color: #ffffff; 
+  /* Lavender border instead of black for accent */
+  border: 1px solid #b4aaff; 
   padding: 1.5rem;
   border-radius: 4px;
   transition: transform 0.2s ease;
@@ -260,7 +268,7 @@ a:hover {
 /* ---------- HOW IT WORKS ---------- */
 .how-it-works {
   padding: 60px 0;
-  background-color: #fafafa;
+  background-color: #ffffff;
   text-align: center;
 }
 .how-it-works-list {
@@ -284,7 +292,7 @@ a:hover {
   left: 0;
   top: 0;
   font-weight: 700;
-  color: #b4aaff;
+  color: #b4aaff; 
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -292,9 +300,10 @@ a:hover {
 /* ---------- TESTIMONIALS ---------- */
 .testimonials {
   padding: 60px 0;
-  background-color: #fff;
+  background-color: #ffffff;
+  /* Lavender top border for accent */
+  border-top: 1px solid #b4aaff;
   text-align: center;
-  border-top: 1px solid #eee;
 }
 .testimonials-grid {
   display: grid;
@@ -304,15 +313,16 @@ a:hover {
   margin: 2rem auto 0 auto;
 }
 .testimonial-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 1px solid #b4aaff; 
   padding: 1.5rem;
   border-radius: 4px;
   text-align: center;
   transition: box-shadow 0.2s ease;
 }
 .testimonial-card:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  /* Subtle green highlight for hover */
+  box-shadow: 0 2px 8px #87f29a; 
 }
 .testimonial-image {
   width: 60px;
@@ -328,24 +338,26 @@ a:hover {
 .testimonial-card span {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: #010101;
   font-weight: 600;
 }
 
 /* ---------- FAQ ---------- */
 .faq {
   padding: 60px 0;
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 .faq-item {
-  border: 1px solid #ccc;
+  /* Lavender border for FAQ items */
+  border: 1px solid #b4aaff;
   border-radius: 4px;
   margin-bottom: 1rem;
   overflow: hidden;
 }
+/* Green question bar for variety */
 .faq-question {
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #87f29a; 
   padding: 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -355,16 +367,17 @@ a:hover {
 }
 .faq-answer {
   display: none;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1rem;
   font-weight: 300;
   line-height: 1.6;
 }
 
 /* ---------- CONTACT SECTION (FormSubmit) ---------- */
+/* Keeping your contact gradient: #87f29a -> #ffffff -> #b4aaff */
 .contact-section {
   padding: 60px 0;
-  background: linear-gradient(to right, #e0ffe5, #f0faff);
+  background: linear-gradient(to right, #87f29a, #ffffff, #b4aaff);
   text-align: center;
 }
 .contact-form {
@@ -383,7 +396,8 @@ a:hover {
   padding: 0.75rem;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  border: 1px solid #ccc;
+  /* Lavender border instead of black */
+  border: 1px solid #b4aaff;
   border-radius: 4px;
 }
 .submit-btn {
@@ -392,9 +406,10 @@ a:hover {
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   padding: 40px 0;
-  border-top: 1px solid #ccc;
+  /* Lavender border-top for accent */
+  border-top: 1px solid #b4aaff;
 }
 .footer-flex {
   display: flex;
@@ -425,16 +440,16 @@ a:hover {
   transition: color 0.2s ease;
 }
 .social-link:hover {
-  color: #666;
+  color: #010101; /* Black hover for links in footer */
 }
 .footer-bottom {
   text-align: center;
   margin-top: 1.5rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #010101;
 }
 .footer-bottom a {
-  color: #666;
+  color: #010101;
   text-decoration: underline;
 }
 
@@ -447,12 +462,13 @@ a:hover {
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Lavender shadow instead of black */
+    box-shadow: 0 2px 5px #b4aaff;
   }
   .nav-links ul {
     flex-direction: column;

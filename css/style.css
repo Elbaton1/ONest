@@ -1,0 +1,507 @@
+/*
+  style.css
+  ~~~~~~~~~
+  - Bigger hero, moving gradient background
+  - Perfectly sized embedded YT video
+  - Pulse CTA button
+  - Benefits, Social Proof, Testimonials, FAQ
+  - Contact form with FormSubmit for real email
+*/
+
+/* ---------- RESET & GLOBAL BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gilroy", "Poppins", sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #444;
+}
+
+/* ---------- NAVBAR (STICKY) ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.onest-logo {
+  height: 40px;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.nav-links li a {
+  font-weight: 300; /* Gilroy-light fallback */
+  font-size: 1rem;
+}
+
+/* ---------- HERO SECTION (MOVING GRADIENT) ---------- */
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Vibrant gradient that animates over time */
+  background: linear-gradient(-45deg, #b4aaff, #ff8a9f, #98f9aa, #7fd7ff);
+  background-size: 400% 400%;
+  animation: heroGradient 20s ease infinite;
+}
+@keyframes heroGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-overlay {
+  background-color: rgba(0,0,0,0.25);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content {
+  text-align: center;
+  color: #fff;
+  padding: 100px 0 50px;
+}
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-subheading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Pulse CTA */
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.pulse-cta {
+  animation: pulse 2s infinite;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  transition: filter 0.2s ease;
+}
+.btn-primary {
+  background-color: #b4aaff; /* CTA color */
+  color: #fff;
+}
+.btn-primary:hover {
+  filter: brightness(0.9);
+}
+
+/* Responsive video container with aspect ratio */
+.video-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 3rem auto 0 auto;
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.video-container::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* 16:9 ratio */
+}
+.video-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ---------- FADE-IN SECTIONS ---------- */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- SECTION HEADINGS ---------- */
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* ---------- SOCIAL PROOF ---------- */
+.social-proof {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.brand-logos img {
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+.brand-logos img:hover {
+  transform: scale(1.1);
+}
+.short-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.short-testimonials blockquote {
+  background-color: #f9f9f9;
+  border-left: 4px solid #b4aaff;
+  padding: 1rem;
+  font-style: italic;
+}
+.short-testimonials cite {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* ---------- BENEFITS ---------- */
+.benefits {
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(to right, #fef6ff, #f5faff);
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.benefit-box {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 1.5rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+.benefit-box:hover {
+  transform: translateY(-3px);
+}
+.benefit-box h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.75rem 0;
+}
+.benefit-box p {
+  font-weight: 300;
+}
+.benefit-image {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto 0.75rem auto;
+}
+
+/* ---------- HOW IT WORKS ---------- */
+.how-it-works {
+  padding: 60px 0;
+  background-color: #fafafa;
+  text-align: center;
+}
+.how-it-works-list {
+  list-style: decimal inside;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: left;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.how-it-works-list li {
+  margin-bottom: 1rem;
+}
+
+/* ---------- REPEATED CTA ---------- */
+.repeated-cta {
+  text-align: center;
+  padding: 50px 0;
+  border-top: 1px solid #eee;
+}
+.repeated-cta .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ---------- TESTIMONIALS ---------- */
+.testimonials {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
+}
+.testimonial-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 4px;
+  transition: box-shadow 0.2s ease;
+  text-align: center;
+}
+.testimonial-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.testimonial-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 600;
+}
+
+/* ---------- FAQ ---------- */
+.faq {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+.faq-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+.faq-answer {
+  display: none;
+  background-color: #fff;
+  padding: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* ---------- CONTACT SECTION (FormSubmit) ---------- */
+.contact-section {
+  padding: 60px 0;
+  background: linear-gradient(to right, #e0ffe5, #f0faff);
+  text-align: center;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.submit-btn {
+  align-self: flex-start;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  border-top: 1px solid #ccc;
+}
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo {
+  height: 30px;
+}
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.footer-links a {
+  font-weight: 300;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.social-link {
+  text-decoration: underline;
+  font-weight: 300;
+  transition: color 0.2s ease;
+}
+.social-link:hover {
+  color: #666;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+.footer-bottom a {
+  color: #666;
+  text-decoration: underline;
+}
+
+/* ---------- MEDIA QUERIES (RESPONSIVE) ---------- */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .nav-links ul {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .nav-links.active {
+    max-height: 300px;
+  }
+
+  /* No parallax on mobile */
+  .hero {
+    background-attachment: scroll;
+  }
+  .hero-heading {
+    font-size: 2rem;
+  }
+  .hero-subheading {
+    font-size: 1rem;
+  }
+
+  .video-container {
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  .brand-logos {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .benefits-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}

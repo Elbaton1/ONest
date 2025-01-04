@@ -509,25 +509,3 @@ a:hover {
     text-align: center;
   }
 }
-@media (max-width: 768px) {
-  /* Only apply these fixes on screens narrower than 768px */
-
-  html, body {
-    /* Force full width/height on mobile to override iframe's weird sizing */
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    overflow: hidden !important; 
-    /* Hide any forced scrollbars from the iframe’s wrapper on small screens */
-  }
-
-  /* If you have a main container, e.g. #main-content */
-  #main-content, body > * {
-    width: 100vw !important;
-    height: 100vh !important;
-    overflow: auto !important;
-    transform: scale(1) !important; 
-    transform-origin: top left !important;
-  }
-}

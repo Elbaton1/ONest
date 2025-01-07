@@ -45,9 +45,11 @@
       <!-- Nav links -->
       <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#benefits">Learn More</a></li>
-          <li><a href="#contact-section">Contact Us</a></li>
+          <!-- [Boss request] remove “Home” and “Learn More” -->
+          <!-- <li><a href="#hero">Home</a></li>
+          <li><a href="#benefits">Learn More</a></li> -->
+          <!-- [Boss request] change “Contact Us” to “Join the Waitlist” -->
+          <li><a href="https://coda.io/form/Waitlist_dSEr26qbvHi?Product=ONest">Join the Waitlist</a></li>
         </ul>
       </nav>
     </div>
@@ -60,12 +62,15 @@
         <h1 class="hero-heading">
           Get Deep Insights from Your Customers
         </h1>
+
+        <!-- [Boss request] new subheading -->
         <h2 class="hero-subheading">
-          Because guessing is for game shows, not for your business success. Let’s find out what people really think—no complicated steps required!
+          Replace static feedback surveys with dynamic customer chats — and learn how your business is <em>REALLY</em> doing
         </h2>
-        <!-- Single CTA leading to contact -->
-        <a href="#contact-section" class="btn btn-primary hero-cta pulse-cta">
-          Let’s Do This
+
+        <!-- [Boss request] replace “Let’s Do This” with “Join the Waitlist” -->
+        <a href="https://coda.io/form/Waitlist_dSEr26qbvHi?Product=ONest" class="btn btn-primary hero-cta pulse-cta">
+          Join the Waitlist
         </a>
 
         <!-- YouTube video (16:9) -->
@@ -82,7 +87,90 @@
     </div>
   </section>
 
-  <!-- ========== SOCIAL PROOF ========== -->
+  <!-- ========== BENEFITS ========== -->
+  <section class="benefits fade-section" id="benefits">
+    <div class="container">
+      <h3 class="section-heading">Benefits</h3>
+      <div class="benefits-grid">
+        <!-- [Boss request] updated text + images -->
+        <div class="benefit-box">
+          <img
+            src="images/benefit-image1.png"
+            alt="Crowd with speech bubbles (one glowing bigger)"
+            class="benefit-image"
+          />
+          <h4>Real-Time Insights</h4>
+          <p>Spot customer issues instantly and adapt → before small problems become big ones.</p>
+        </div>
+        <div class="benefit-box">
+          <img
+            src="images/benefit-image2.png"
+            alt="List of three options, many hands pointing at the middle option"
+            class="benefit-image"
+          />
+          <h4>Cost Savings</h4>
+          <p>Cut wasted effort — focus on what your customers actually value.</p>
+        </div>
+        <div class="benefit-box">
+          <img
+            src="images/benefit-image3.png"
+            alt="Multiple vendor booths with the center booth glowing"
+            class="benefit-image"
+          />
+          <h4>Brand Loyalty</h4>
+          <p>Turn customer follow-ups into meaningful conversations that strengthen your brand reputation.</p>
+        </div>
+        <div class="benefit-box">
+          <img
+            src="images/benefit-image4.png"
+            alt="A paper survey form in a garbage can"
+            class="benefit-image"
+          />
+          <h4>No More Surveys</h4>
+          <p>Set and adapt goals and questions in minutes, not weeks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how-it-works fade-section" id="how-it-works">
+    <div class="container">
+      <h3 class="section-heading">How It Works</h3>
+      <ol class="how-it-works-list">
+        <!-- [Boss request] updated steps -->
+        <li>
+          <strong>Set Up</strong><br>
+          Chat with ONest to identify your business details, the aspects of your product/service you want to improve, and any specific questions you have for your customers.
+        </li>
+        <li>
+          <strong>Generate QR Codes</strong><br>
+          ONest creates QR codes and messaging to provide to your customers — on receipts, at the counter, or anywhere else they’ll see them.
+        </li>
+        <li>
+          <strong>Customers Scan & Chat</strong><br>
+          Customers scan a QR code with their phone and enter a voice or text chat with ONest (powered by OpenAI GPT-4). It adapts to their speaking style to put them at ease and get them talking about what matters.
+        </li>
+        <li>
+          <strong>Understand Insights</strong><br>
+          ONest finds patterns in the feedback and delivers insights in your preferred format — email, text, chat, you name it. You also get sources to original conversations for deeper context.
+        </li>
+        <li>
+          <strong>Get Recommendations</strong><br>
+          Receive tailored recommendations to improve your product/service, refine your customer questions, and continuously elevate future customer conversations.
+        </li>
+        <li>
+          <strong>Adapt Your Interviews</strong><br>
+          Just say the word and ONest will update future interviews to include your new insights and directions.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== SOCIAL PROOF (MOVED) ========== -->
+  <!-- [Boss request] we want “Trusted by Leading Brands” to replace “What Our Customers Say”
+       So we'll hide "What Our Customers Say" and place the social-proof section here instead.
+  -->
   <section class="social-proof fade-section">
     <div class="container">
       <h3 class="section-heading">Trusted by Leading Brands</h3>
@@ -92,11 +180,11 @@
         <img src="images/brand-logo1.png" alt="Brand 3 Logo" />
       </div>
       <div class="short-testimonials">
+        <!-- Short testimonials preserved for minimal social proof -->
         <blockquote>
           <p>“I’ve seen my fair share of mysteries, but Onest turns the lights on so I can actually see what’s going on!”</p>
           <cite>— Batman, Vigilante at Gotham Inc.</cite>
         </blockquote>
-        
         <blockquote>
           <p>“My team’s satisfaction soared in a matter of days. Onest gave us the power to read between the lines—no more guesswork!”</p>
           <cite>— Bruce Wayne, Head of Product (…allegedly)</cite>
@@ -105,245 +193,84 @@
     </div>
   </section>
 
-  <!-- ========== BENEFITS ========== -->
-  <section class="benefits fade-section" id="benefits">
-    <div class="container">
-      <h3 class="section-heading">Benefits</h3>
-      <div class="benefits-grid">
-        <div class="benefit-box">
-          <img
-            src="images/benefit-image1.png"
-            alt="Icon representing Real-Time Insights"
-            class="benefit-image"
-          />
-          <h4>Real-Time Insights</h4>
-          <p>Discover what’s on people’s minds today, not last month. Quick, current intel right at your fingertips.</p>
-        </div>
-        <div class="benefit-box">
-          <img
-            src="images/benefit-image2.png"
-            alt="Icon representing Cost Savings"
-            class="benefit-image"
-          />
-          <h4>Cost Savings</h4>
-          <p>Stop throwing money at ideas people don’t want. Focus on what really sparks their enthusiasm—and your profit.</p>
-        </div>
-        <div class="benefit-box">
-          <img
-            src="images/benefit-image3.png"
-            alt="Icon representing Simple Setup"
-            class="benefit-image"
-          />
-          <h4>Simple Setup</h4>
-          <p>No sweat, no worries. We handle the behind-the-scenes stuff so you can do what you do best—run your business.</p>
-        </div>
-        <div class="benefit-box">
-          <img
-            src="images/benefit-image4.png"
-            alt="Icon representing AI Reports"
-            class="benefit-image"
-          />
-          <h4>Easy-to-Read Reports</h4>
-          <p>Skip the lengthy spreadsheets. Get user-friendly summaries that tell you exactly what’s working and what could improve.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== HOW IT WORKS (No mention of code) ========== -->
-  <section class="how-it-works fade-section" id="how-it-works">
-    <div class="container">
-      <h3 class="section-heading">How It Works</h3>
-      <ol class="how-it-works-list">
-        <li>
-          <strong>Sign Up</strong><br>
-          Join us and let our system do the heavy lifting. You’ll be up and running before you can say “my customers love me.”
-        </li>
-        <li>
-          <strong>Offer a Quick Way to Share Thoughts</strong><br>
-          With a simple link or scannable spot, customers can open up. It’s like speed dating, but for honest feedback.
-        </li>
-        <li>
-          <strong>Watch the Magic Happen</strong><br>
-          We gather real opinions—no filters, no second-guessing. Honest feedback arrives faster than a pizza delivery.
-        </li>
-        <li>
-          <strong>See Clear Suggestions</strong><br>
-          Tweak your products, fix your services, or fine-tune your approach. Don’t worry, you get a straightforward breakdown of what people said.
-        </li>
-        <li>
-          <strong>Keep Growing</strong><br>
-          Use your fresh insights to delight customers and stay ahead of the pack. You’ll wonder how you ever lived without it.
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ========== TESTIMONIALS (4 total) ========== -->
+  <!-- ========== TESTIMONIALS ========== -->
+  <!-- [Boss request] hide this section for now (comment it out) -->
+  <!--
   <section class="testimonials fade-section" id="testimonials">
     <div class="container">
       <h3 class="section-heading">What Our Customers Say</h3>
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <img
-            src="images/placeholder-testimonial1.png"
-            alt="Testimonial from Taylor"
-            class="testimonial-image"
-          />
+          <img src="images/placeholder-testimonial1.png" alt="Testimonial from Taylor" class="testimonial-image" />
           <p>“Our churn dropped by 30%. Best decision ever made!”</p>
           <span>— Taylor, COO</span>
         </div>
         <div class="testimonial-card">
-          <img
-            src="images/placeholder-testimonial1.png"
-            alt="Testimonial from Alex"
-            class="testimonial-image"
-          />
+          <img src="images/placeholder-testimonial1.png" alt="Testimonial from Alex" class="testimonial-image" />
           <p>“Finally, real data instead of guessy-guessy nonsense. My team’s so happy!”</p>
           <span>— Alex, Head of CX</span>
-        </div>
-        <div class="testimonial-card">
-          <img
-            src="images/placeholder-testimonial1.png"
-            alt="Testimonial from Sam"
-            class="testimonial-image"
-          />
-          <p>“We can adjust our offerings on the fly, thanks to all the honest feedback.”</p>
-          <span>— Sam, Product Manager</span>
-        </div>
-        <div class="testimonial-card">
-          <img
-            src="images/placeholder-testimonial1.png"
-            alt="Testimonial from Morgan"
-            class="testimonial-image"
-          />
-          <p>“Two words: game changer. I had no idea how much we could learn by just asking!”</p>
-          <span>— Morgan, Founder</span>
         </div>
       </div>
     </div>
   </section>
+  -->
 
   <!-- ========== FAQ (No mention of code) ========== -->
+  <!-- [Boss request] hide FAQ for now (comment it out) -->
+  <!--
   <section class="faq fade-section" id="faq">
     <div class="container">
       <h3 class="section-heading">Frequently Asked Questions</h3>
-
       <div class="faq-item">
-        <button 
-          class="faq-question" 
-          aria-expanded="false"
-          aria-controls="faq-answer-1"
-        >
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
           Do I need any fancy skills to use this?
         </button>
         <div class="faq-answer" id="faq-answer-1">
           <p>Nope! You already have what it takes. We keep it straightforward so you can jump right in.</p>
         </div>
       </div>
-
-      <div class="faq-item">
-        <button 
-          class="faq-question" 
-          aria-expanded="false"
-          aria-controls="faq-answer-2"
-        >
-          Can this handle loads of feedback if I get really popular?
-        </button>
-        <div class="faq-answer" id="faq-answer-2">
-          <p>Absolutely! Growth is our middle name. (Well, not literally, but you get the idea.)</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button 
-          class="faq-question" 
-          aria-expanded="false"
-          aria-controls="faq-answer-3"
-        >
-          How do I invite my customers to share their thoughts?
-        </button>
-        <div class="faq-answer" id="faq-answer-3">
-          <p>A simple link or a quick scan—whichever suits you. We make it super easy for them to hop in and give feedback.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button 
-          class="faq-question" 
-          aria-expanded="false"
-          aria-controls="faq-answer-4"
-        >
-          Do you have a free option?
-        </button>
-        <div class="faq-answer" id="faq-answer-4">
-          <p>We sure do! Start free, and when you’re ready for more advanced features, you can always upgrade.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button 
-          class="faq-question" 
-          aria-expanded="false"
-          aria-controls="faq-answer-5"
-        >
-          When will I start seeing results?
-        </button>
-        <div class="faq-answer" id="faq-answer-5">
-          <p>Most folks notice genuine feedback rolling in almost immediately. Talk about instant gratification!</p>
-        </div>
-      </div>
     </div>
   </section>
+  -->
 
   <!-- ========== CONTACT SECTION ========== -->
+  <!-- [Boss request] rename to “Join the Waitlist” + subheading + rename “message” field + new button text -->
   <section class="contact-section fade-section" id="contact-section">
     <div class="container">
-      <h3 class="section-heading">Contact Us</h3>
-      <form
-        action="https://formsubmit.co/mobrien902@gmail.com"
-        method="POST"
-        class="contact-form"
-      >
-        <input type="hidden" name="_subject" value="New Onest Contact Submission">
-        <input type="hidden" name="_captcha" value="false">
-        <!-- Honeypot / anti-spam -->
-        <input type="text" name="_honey" style="display:none" />
-
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          required
-          autocomplete="name"
-        />
-
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your Email"
-          required
-          autocomplete="email"
-        />
-
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="How can we help?"
-          required
-          autocomplete="off"
-        ></textarea>
-
-        <button type="submit" class="btn btn-primary submit-btn">
-          Send Message
-        </button>
+      <h3 class="section-heading">Join the Waitlist</h3>
+      <p style="text-align:center; max-width:600px; margin:0 auto 2rem auto;">
+        Be one of the first to try ONest, and get real customer feedback.
+      </p>
+      
+      <!-- Direct link button to open the Coda form -->
+      <div style="text-align:center;">
+        <a 
+          href="https://coda.io/form/Waitlist_dSEr26qbvHi?Product=ONest" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+          style="padding: 0.8rem 1.5rem; text-decoration:none;"
+        >
+          Join the Waitlist
+        </a>
+      </div>
+      
+      <!-- 
+      The original form and iframe embed are commented out for reference:
+      
+      <iframe
+        width="600"
+        height="800"
+        src="https://coda.io/form/Waitlist_dSEr26qbvHi?Product=ONest"
+        frameborder="0"
+        style="max-width: 100%; border: 1px solid #b4aaff; border-radius: 4px;"
+        allowfullscreen>
+      </iframe>
+      
+      <form action="https://formsubmit.co/mobrien902@gmail.com" method="POST" class="contact-form">
+        ...
       </form>
+      -->
     </div>
   </section>
 
@@ -351,32 +278,19 @@
   <footer class="footer">
     <div class="container footer-flex">
       <a href="#hero" class="footer-logo-link">
-        <img
-          src="images/onest-logo1.png"
-          alt="Onest Footer Logo"
-          class="footer-logo"
-        />
+        <img src="images/onest-logo1.png" alt="Onest Footer Logo" class="footer-logo"/>
       </a>
-      <ul class="footer-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#benefits">Learn More</a></li>
-        <li><a href="#contact-section">Contact Us</a></li>
-      </ul>
-      <div class="footer-social">
-        <p>Follow us:</p>
-        <a href="#" class="social-link">Twitter</a>
-        <a href="#" class="social-link">LinkedIn</a>
-      </div>
+      
     </div>
     <div class="container footer-bottom">
-      <p>© 2024 Onest. All rights reserved.</p>
+      <p>© 2025 Onest. All rights reserved.</p>
       <p>
         <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
       </p>
     </div>
   </footer>
 
-  <!-- Main JS for nav toggle, FAQ, fade-in -->
+  <!-- Main JS -->
   <script src="js/main.js"></script>
 </body>
 </html>

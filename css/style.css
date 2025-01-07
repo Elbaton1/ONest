@@ -1,11 +1,9 @@
 /*
   style.css
   ~~~~~~~~~
-  - Mobile-centered brand logos
-  - Updated benefits, FAQ, and how-it-works text
-  - 4 testimonials
-  - Single CTA => #contact-section
-  - FormSubmit => sends to mobrien902@gmail.com
+  - Minimal changes per boss’s instructions
+  - Sections hidden for Testimonials & FAQ
+  - Same color palette (#b4aaff)
 */
 
 /* ---------- RESET & BASE ---------- */
@@ -89,14 +87,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(-45deg, #ffffff, #b4aaff);
-  background-size: 400% 400%;
-  animation: heroGradient 20s ease infinite;
-}
-@keyframes heroGradient {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  background: #b4aaff;  /* Solid background to smooth transition */
 }
 .hero-overlay {
   background-color: transparent; 
@@ -138,16 +129,17 @@ a:hover {
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
   font-weight: 700;
-  transition: filter 0.2s ease;
+  transition: filter 0.2s ease, transform 0.2s ease;
   text-align: center;
   cursor: pointer;
 }
 .btn-primary {
-  background-color: #b4aaff; 
+  background-color: #000000; 
   color: #ffffff; 
 }
 .btn-primary:hover {
   filter: brightness(0.9);
+  transform: scale(1.02);
 }
 /* Perfect 16:9 video container */
 .video-container {
@@ -236,7 +228,7 @@ a:hover {
 .benefits {
   padding: 60px 0;
   text-align: center;
-  background: linear-gradient(-45deg, #ffffff, #b4aaff);
+  background: #ffffff; /* Uniform white background for smoother transition */
 }
 .benefits-grid {
   display: grid;
@@ -302,8 +294,9 @@ a:hover {
   line-height: 1.5;
 }
 
-/* ---------- TESTIMONIALS ---------- */
+/* ---------- TESTIMONIALS (HIDDEN) ---------- */
 .testimonials {
+  display: none; /* Boss request: hide for now */
   padding: 60px 0;
   background-color: #ffffff;
   border-top: 1px solid #b4aaff; 
@@ -345,8 +338,9 @@ a:hover {
   font-weight: 600;
 }
 
-/* ---------- FAQ ---------- */
+/* ---------- FAQ (HIDDEN) ---------- */
 .faq {
+  display: none; /* Boss request: hide for now */
   padding: 60px 0;
   background-color: #ffffff;
 }
@@ -382,7 +376,7 @@ a:hover {
 /* ---------- CONTACT SECTION ---------- */
 .contact-section {
   padding: 60px 0;
-  background: linear-gradient(to right, #b4aaff, #ffffff);
+  background: #b4aaff; /* Purple background */ /* Uniform white background for smoother transition */
   text-align: center;
 }
 .contact-form {
@@ -422,7 +416,7 @@ a:hover {
   justify-content: space-between;
 }
 .footer-logo {
-  height: 30px;
+  height: 40px;
 }
 .footer-links {
   display: flex;

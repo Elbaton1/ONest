@@ -2,7 +2,7 @@
  * main.js
  * ~~~~~~~
  * - Hamburger nav toggle
- * - FAQ accordion (with ARIA)
+ * - FAQ accordion (with ARIA) [currently hidden by CSS]
  * - Intersection Observer for fade-in
  */
 

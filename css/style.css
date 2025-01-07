@@ -22,6 +22,9 @@ body {
   background-color: #ffffff; /* 60% White (dominant) */
   color: #010101; /* 30% Black (primary text) */
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll issues from forwarding */
 }
 .container {
   width: 90%;
@@ -477,10 +480,12 @@ a:hover {
   }
   .nav-links.active {
     max-height: 300px;
+    overflow: auto; /* Allow scrolling if content overflows */
   }
 
   .hero {
     background-attachment: scroll;
+    background-size: 200% 200%; /* Adjusted for mobile */
   }
   .hero-heading {
     font-size: 2rem;
@@ -489,11 +494,11 @@ a:hover {
     font-size: 1rem;
   }
   .video-container {
-    width: 95%;
-    margin-top: 1rem;
+    width: 100%;       /* Allow full width on mobile */
+    margin: 0 auto;    /* Center video container */
   }
 
-  /* Center brand logos on mobile updatedd */
+  /* Center brand logos on mobile */
   .brand-logos {
     flex-direction: column;
     align-items: center;

@@ -55,7 +55,7 @@ a:hover {
   height: 70px;
 }
 .onest-logo {
-  height: 40px;
+  height: 50px; /* Increased header logo size */
 }
 .nav-toggle {
   display: none;
@@ -228,7 +228,7 @@ a:hover {
 .benefits {
   padding: 60px 0;
   text-align: center;
-  background: #ffffff; /* Uniform white background for smoother transition */
+  background: #ffffff;
 }
 .benefits-grid {
   display: grid;
@@ -256,19 +256,18 @@ a:hover {
 .benefit-box p {
   font-weight: 300;
 }
-/* ---------- Updated Benefit Image Style ---------- */
 .benefit-image {
   max-width: 100px;
   margin: 0 auto 0.75rem auto;
   display: block;
-  border: 2px solid #b4aaff;    /* Added border */
-  border-radius: 8px;           /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+  border: 2px solid #b4aaff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* ---------- HOW IT WORKS ---------- */
 .how-it-works {
-  padding: 60px 0;
+  padding: 30px 0 60px 0; /* Changed top padding from 40px to 30px */
   background-color: #ffffff;
   text-align: center;
 }
@@ -300,7 +299,7 @@ a:hover {
 
 /* ---------- TESTIMONIALS (HIDDEN) ---------- */
 .testimonials {
-  display: none; /* Boss request: hide for now */
+  display: none;
   padding: 60px 0;
   background-color: #ffffff;
   border-top: 1px solid #b4aaff; 
@@ -344,7 +343,7 @@ a:hover {
 
 /* ---------- FAQ (HIDDEN) ---------- */
 .faq {
-  display: none; /* Boss request: hide for now */
+  display: none;
   padding: 60px 0;
   background-color: #ffffff;
 }
@@ -380,7 +379,7 @@ a:hover {
 /* ---------- CONTACT SECTION ---------- */
 .contact-section {
   padding: 60px 0;
-  background: #b4aaff; /* Purple background */
+  background: #b4aaff;
   text-align: center;
   color: #ffffff;
 }
@@ -423,7 +422,7 @@ a:hover {
   justify-content: space-between;
 }
 .footer-logo {
-  height: 40px;
+  height: 50px; /* Increased footer logo size */
 }
 .footer-links {
   display: flex;
@@ -495,7 +494,6 @@ a:hover {
   }
 
   .brand-logos { justify-content: center; }
-
   .benefits-grid,
   .testimonials-grid { grid-template-columns: 1fr; }
   .footer-flex { flex-direction: column; text-align: center; }

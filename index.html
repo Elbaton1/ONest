@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Onest - Get Deep Insights from Your Customers</title>
 
+  <script>
+    if (window.self !== window.top) {
+        // Redirect to prevent being trapped in an iframe
+        window.top.location = window.self.location;
+    }
+  </script>
+
   <!-- Google Fonts fallback: Poppins if Gilroy isn't installed -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>

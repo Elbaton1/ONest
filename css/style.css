@@ -419,10 +419,13 @@ a:hover {
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Centers all items */
 }
+
 .footer-logo {
   height: 50px; /* Increased footer logo size */
+  display: block;     /* make the image a block-level element */
+  margin: 0 auto;     /* center horizontally within its container */
 }
 .footer-links {
   display: flex;

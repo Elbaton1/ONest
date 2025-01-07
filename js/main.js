@@ -2,7 +2,7 @@
  * main.js
  * ~~~~~~~
  * - Hamburger nav toggle
- * - FAQ accordion
+ * - FAQ accordion (with ARIA)
  * - Intersection Observer for fade-in
  */
 
@@ -12,10 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('navToggle');
   const navLinks  = document.getElementById('navLinks');
 
+  // Toggle nav menu on hamburger click
   navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
 
+  // Close nav on link click
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       if (navLinks.classList.contains('active')) {
@@ -32,10 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     questionBtn.addEventListener('click', () => {
       const isOpen = (answer.style.display === 'block');
-      // close all others
-      document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
-      // toggle this one
+
+      // Close all answers
+      document.querySelectorAll('.faq-answer').forEach(ans => {
+        ans.style.display = 'none';
+      });
+      // Reset aria-expanded on all
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+      });
+
+      // Toggle this one
       answer.style.display = isOpen ? 'none' : 'block';
+      questionBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
     });
   });
 

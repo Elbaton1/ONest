@@ -1,10 +1,10 @@
-/* 
+/*
   style.css
   ~~~~~~~~~
   - Mobile-centered brand logos
-  - Real images in benefits
-  - Single CTA: "Let’s Do This" -> #contact-section
-  - "How It Works" slightly styled
+  - Updated benefits, FAQ, and how-it-works text
+  - 4 testimonials
+  - Single CTA => #contact-section
   - FormSubmit => sends to mobrien902@gmail.com
 */
 
@@ -19,36 +19,36 @@ html {
 }
 body {
   font-family: "Gilroy", "Poppins", sans-serif;
-  background-color: #ffffff; /* 60% White (dominant) */
-  color: #010101; /* 30% Black (primary text) */
+  background-color: #ffffff; 
+  color: #010101; 
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll issues from forwarding */
+  overflow-x: hidden; 
 }
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
   color: inherit;
   transition: color 0.2s ease;
 }
 a:hover {
-  /* Use accent color (Lavender) for link hover */
-  color: #b4aaff; /* Lavender */
+  color: #b4aaff; 
 }
 
-/* ---------- NAVBAR (sticky) ---------- */
+/* ---------- NAVBAR ---------- */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #ffffff; /* White */
-  /* Subtle Lavender shadow for visual accent */
-  box-shadow: 0 2px 5px rgba(180, 170, 255, 0.1); /* Lavender shadow with low opacity */
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(180, 170, 255, 0.1);
 }
 .nav-container {
   display: flex;
@@ -64,11 +64,12 @@ a:hover {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  outline: none;
 }
 .bar {
   width: 25px; 
   height: 3px; 
-  background-color: #010101; /* Black */
+  background-color: #010101;
   transition: all 0.3s ease;
 }
 .nav-links ul {
@@ -81,14 +82,13 @@ a:hover {
   font-size: 1rem;
 }
 
-/* ---------- HERO (MOVING GRADIENT) ---------- */
+/* ---------- HERO ---------- */
 .hero {
   position: relative;
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Use single accent color gradient */
   background: linear-gradient(-45deg, #ffffff, #b4aaff);
   background-size: 400% 400%;
   animation: heroGradient 20s ease infinite;
@@ -108,17 +108,20 @@ a:hover {
 }
 .hero-content {
   text-align: center;
-  color: #010101; /* Black */
+  color: #010101; 
   padding: 100px 0 50px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .hero-heading {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 .hero-subheading {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 600;
   max-width: 600px;
   margin: 0 auto 2rem auto;
 }
@@ -137,11 +140,11 @@ a:hover {
   font-weight: 700;
   transition: filter 0.2s ease;
   text-align: center;
+  cursor: pointer;
 }
 .btn-primary {
-  /* Accent color for primary button */
-  background-color: #b4aaff; /* Lavender */
-  color: #ffffff; /* White */
+  background-color: #b4aaff; 
+  color: #ffffff; 
 }
 .btn-primary:hover {
   filter: brightness(0.9);
@@ -152,14 +155,14 @@ a:hover {
   max-width: 800px;
   margin: 3rem auto 0 auto;
   position: relative;
-  border: 2px solid #ffffff; /* White */
+  border: 2px solid #ffffff; 
   border-radius: 4px;
   overflow: hidden;
 }
 .video-container::before {
   content: "";
   display: block;
-  padding-top: 56.25%;
+  padding-top: 56.25%; 
 }
 .video-container iframe {
   position: absolute;
@@ -184,11 +187,10 @@ a:hover {
 /* ---------- SOCIAL PROOF ---------- */
 .social-proof {
   padding: 60px 0;
-  background-color: #ffffff; /* White */
+  background-color: #ffffff;
   text-align: center;
-  /* Use accent color for borders */
-  border-top: 1px solid #b4aaff; /* Lavender */
-  border-bottom: 1px solid #b4aaff; /* Lavender */
+  border-top: 1px solid #b4aaff; 
+  border-bottom: 1px solid #b4aaff; 
 }
 .section-heading {
   font-size: 2rem;
@@ -197,6 +199,7 @@ a:hover {
 }
 .brand-logos {
   display: flex;
+  flex-wrap: wrap; 
   justify-content: center;
   gap: 2rem;
   margin: 2rem 0;
@@ -214,17 +217,18 @@ a:hover {
   gap: 1rem;
   max-width: 700px;
   margin: 0 auto;
+  text-align: left;
 }
 .short-testimonials blockquote {
-  background-color: #ffffff; /* White */
-  border-left: 4px solid #b4aaff; /* Lavender */
+  background-color: #ffffff;
+  border-left: 4px solid #b4aaff;
   padding: 1rem;
   font-style: italic;
 }
 .short-testimonials cite {
   display: block;
   font-size: 0.9rem;
-  color: #010101; /* Black */
+  color: #010101;
   margin-top: 0.5rem;
 }
 
@@ -232,7 +236,6 @@ a:hover {
 .benefits {
   padding: 60px 0;
   text-align: center;
-  /* Use single accent color gradient */
   background: linear-gradient(-45deg, #ffffff, #b4aaff);
 }
 .benefits-grid {
@@ -243,14 +246,15 @@ a:hover {
   margin: 0 auto;
 }
 .benefit-box {
-  background-color: #ffffff; /* White */
-  border: 1px solid #b4aaff; /* Lavender border */
+  background-color: #ffffff;
+  border: 1px solid #b4aaff;
   padding: 1.5rem;
   border-radius: 4px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .benefit-box:hover {
   transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(180, 170, 255, 0.2);
 }
 .benefit-box h4 {
   font-size: 1.2rem;
@@ -269,7 +273,7 @@ a:hover {
 /* ---------- HOW IT WORKS ---------- */
 .how-it-works {
   padding: 60px 0;
-  background-color: #ffffff; /* White */
+  background-color: #ffffff;
   text-align: center;
 }
 .how-it-works-list {
@@ -293,7 +297,7 @@ a:hover {
   left: 0;
   top: 0;
   font-weight: 700;
-  color: #b4aaff; /* Lavender */
+  color: #b4aaff;
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -301,9 +305,8 @@ a:hover {
 /* ---------- TESTIMONIALS ---------- */
 .testimonials {
   padding: 60px 0;
-  background-color: #ffffff; /* White */
-  /* Use accent color for top border */
-  border-top: 1px solid #b4aaff; /* Lavender */
+  background-color: #ffffff;
+  border-top: 1px solid #b4aaff; 
   text-align: center;
 }
 .testimonials-grid {
@@ -314,16 +317,15 @@ a:hover {
   margin: 2rem auto 0 auto;
 }
 .testimonial-card {
-  background-color: #ffffff; /* White */
-  border: 1px solid #b4aaff; /* Lavender border */
+  background-color: #ffffff;
+  border: 1px solid #b4aaff;
   padding: 1.5rem;
   border-radius: 4px;
   text-align: center;
   transition: box-shadow 0.2s ease;
 }
 .testimonial-card:hover {
-  /* Use accent color for box shadow */
-  box-shadow: 0 2px 8px rgba(180, 170, 255, 0.5); /* Lavender shadow */
+  box-shadow: 0 2px 8px rgba(180, 170, 255, 0.5);
 }
 .testimonial-image {
   width: 60px;
@@ -339,46 +341,47 @@ a:hover {
 .testimonial-card span {
   display: block;
   font-size: 0.9rem;
-  color: #010101; /* Black */
+  color: #010101;
   font-weight: 600;
 }
 
 /* ---------- FAQ ---------- */
 .faq {
   padding: 60px 0;
-  background-color: #ffffff; /* White */
+  background-color: #ffffff;
 }
 .faq-item {
-  /* Use accent color for borders */
-  border: 1px solid #b4aaff; /* Lavender */
+  border: 1px solid #b4aaff;
   border-radius: 4px;
   margin-bottom: 1rem;
   overflow: hidden;
 }
 .faq-question {
   width: 100%;
-  /* Use accent color for background */
-  background-color: #b4aaff; /* Lavender */
+  background-color: #b4aaff;
   padding: 1rem;
   font-size: 1rem;
   font-weight: 600;
   text-align: left;
   border: none;
   cursor: pointer;
-  color: #ffffff; /* White text on accent background */
+  color: #ffffff;
+}
+.faq-question:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
 }
 .faq-answer {
   display: none;
-  background-color: #ffffff; /* White */
+  background-color: #ffffff;
   padding: 1rem;
   font-weight: 300;
   line-height: 1.6;
 }
 
-/* ---------- CONTACT SECTION (FormSubmit) ---------- */
+/* ---------- CONTACT SECTION ---------- */
 .contact-section {
   padding: 60px 0;
-  /* Use single accent color gradient */
   background: linear-gradient(to right, #b4aaff, #ffffff);
   text-align: center;
 }
@@ -398,7 +401,7 @@ a:hover {
   padding: 0.75rem;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  border: 1px solid #b4aaff; /* Lavender border */
+  border: 1px solid #b4aaff;
   border-radius: 4px;
 }
 .submit-btn {
@@ -407,10 +410,9 @@ a:hover {
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background-color: #ffffff; /* White */
+  background-color: #ffffff;
   padding: 40px 0;
-  /* Use accent color for top border */
-  border-top: 1px solid #b4aaff; /* Lavender */
+  border-top: 1px solid #b4aaff;
 }
 .footer-flex {
   display: flex;
@@ -429,7 +431,7 @@ a:hover {
 }
 .footer-links a {
   font-weight: 300;
-  color: #010101; /* Black */
+  color: #010101;
 }
 .footer-social {
   display: flex;
@@ -439,20 +441,20 @@ a:hover {
 .social-link {
   text-decoration: underline;
   font-weight: 300;
-  color: #010101; /* Black */
+  color: #010101;
   transition: color 0.2s ease;
 }
 .social-link:hover {
-  color: #b4aaff; /* Lavender hover */
+  color: #b4aaff;
 }
 .footer-bottom {
   text-align: center;
   margin-top: 1.5rem;
   font-size: 0.9rem;
-  color: #010101; /* Black */
+  color: #010101;
 }
 .footer-bottom a {
-  color: #010101; /* Black */
+  color: #010101;
   text-decoration: underline;
 }
 
@@ -465,13 +467,12 @@ a:hover {
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #ffffff; /* White */
+    background-color: #ffffff;
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    /* Use accent color for shadow */
-    box-shadow: 0 2px 5px rgba(180, 170, 255, 0.1); /* Lavender shadow */
+    box-shadow: 0 2px 5px rgba(180, 170, 255, 0.1);
   }
   .nav-links ul {
     flex-direction: column;
@@ -480,12 +481,12 @@ a:hover {
   }
   .nav-links.active {
     max-height: 300px;
-    overflow: auto; /* Allow scrolling if content overflows */
+    overflow: auto;
   }
 
   .hero {
     background-attachment: scroll;
-    background-size: 200% 200%; /* Adjusted for mobile */
+    background-size: 200% 200%; 
   }
   .hero-heading {
     font-size: 2rem;
@@ -494,15 +495,12 @@ a:hover {
     font-size: 1rem;
   }
   .video-container {
-    width: 100%;       /* Allow full width on mobile */
-    margin: 0 auto;    /* Center video container */
+    width: 100%;       
+    margin: 2rem auto 0 auto;
   }
 
-  /* Center brand logos on mobile */
   .brand-logos {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+    justify-content: center;
   }
 
   .benefits-grid,

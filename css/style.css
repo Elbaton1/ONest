@@ -238,10 +238,10 @@ a:hover {
   margin: 0 auto;
 }
 .benefit-box {
-  background-color: #ffffff;
-  border: 1px solid #b4aaff;
+  background-color: #ffffff96;
+  border: 1.5px solid #b4aaff;
   padding: 1.5rem;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .benefit-box:hover {
@@ -256,10 +256,14 @@ a:hover {
 .benefit-box p {
   font-weight: 300;
 }
+/* ---------- Updated Benefit Image Style ---------- */
 .benefit-image {
   max-width: 100px;
   margin: 0 auto 0.75rem auto;
   display: block;
+  border: 2px solid #b4aaff;    /* Added border */
+  border-radius: 8px;           /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
 /* ---------- HOW IT WORKS ---------- */
@@ -376,20 +380,23 @@ a:hover {
 /* ---------- CONTACT SECTION ---------- */
 .contact-section {
   padding: 60px 0;
-  background: #b4aaff; /* Purple background */ /* Uniform white background for smoother transition */
+  background: #b4aaff; /* Purple background */
   text-align: center;
+  color: #ffffff;
 }
 .contact-form {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 2rem;
   max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   text-align: left;
+  color: #010101;
 }
-.contact-form label {
-  font-weight: 600;
-}
+.contact-form label { font-weight: 600; color: #010101; }
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
@@ -397,10 +404,10 @@ a:hover {
   font-family: "Poppins", sans-serif;
   border: 1px solid #b4aaff;
   border-radius: 4px;
+  color: #010101;
+  background: #fff;
 }
-.submit-btn {
-  align-self: flex-start;
-}
+.submit-btn { align-self: flex-start; }
 
 /* ---------- FOOTER ---------- */
 .footer {
@@ -454,9 +461,7 @@ a:hover {
 
 /* ---------- MOBILE RESPONSIVENESS ---------- */
 @media (max-width: 768px) {
-  .nav-toggle {
-    display: flex;
-  }
+  .nav-toggle { display: flex; }
   .nav-links {
     position: absolute;
     top: 70px;
@@ -482,27 +487,16 @@ a:hover {
     background-attachment: scroll;
     background-size: 200% 200%; 
   }
-  .hero-heading {
-    font-size: 2rem;
-  }
-  .hero-subheading {
-    font-size: 1rem;
-  }
+  .hero-heading { font-size: 2rem; }
+  .hero-subheading { font-size: 1rem; }
   .video-container {
     width: 100%;       
     margin: 2rem auto 0 auto;
   }
 
-  .brand-logos {
-    justify-content: center;
-  }
+  .brand-logos { justify-content: center; }
 
   .benefits-grid,
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-flex {
-    flex-direction: column;
-    text-align: center;
-  }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .footer-flex { flex-direction: column; text-align: center; }
 }

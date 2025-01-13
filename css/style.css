@@ -501,3 +501,11 @@ a:hover {
   .testimonials-grid { grid-template-columns: 1fr; }
   .footer-flex { flex-direction: column; text-align: center; }
 }
+
+
+
+.responsive-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
+  border: none; /* Optional: removes the default border */
+}

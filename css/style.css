@@ -142,28 +142,41 @@ a:hover {
   transform: scale(1.02);
 }
 /* Perfect 16:9 video container */
+/* Video container for proper scaling and responsiveness */
 .video-container {
-  width: 80%;
-  max-width: 800px;
-  margin: 3rem auto 0 auto;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto 0 auto;
   position: relative;
-  border: 2px solid #ffffff; 
+  border: 2px solid #b4aaff;
   border-radius: 4px;
   overflow: hidden;
+  text-align: center;
+  background-color: #ffffff;
 }
-.video-container::before {
-  content: "";
+
+/* Ensure the image scales properly */
+.video-container img {
+  width: 100%;
+  height: auto;
   display: block;
-  padding-top: 56.25%; 
+  border-radius: 4px;
+  max-height: 340px;
+  object-fit: fill;
 }
-.video-container iframe {
-  position: absolute;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
-  border: none;
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .video-container {
+    max-width: 90%;
+    margin: 1.5rem auto;
+  }
+
+  .video-container img {
+    max-height: 280px;
+  }
 }
+
 
 /* Fade-in on scroll */
 .fade-section {
